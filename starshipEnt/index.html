@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="스타쉽엔터테인먼트">
+    <meta name="robots" content="엔터, 연예인, 가수, starshipEnt, 스타쉽, 기획사">
+    <meta name="description" content="스타쉽 ENT 공식홈페이지">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="스타쉽 ENT">
+    <meta property="og:url" content="http://www.starship-ent.com/">
+    <meta property="og:description" content="스타쉽 ENT 공식홈페이지">
+    <meta property="og:image" content="http://www.starship-ent.com/img/meta_logo.jpg">
+
+    <title>스타쉽엔터테인먼트</title>
+
+    <!-- 스타일 -->
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+        <!-- 리셋 -->
+    <link rel="stylesheet" href="./css/reset.css">
+        <!-- 스와이프 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.css" integrity="sha512-BYn1UZcpzkgi4cForzUzU/FqsewIcfXDYAU0tThFfehimrUrp5hOtcWPI1Wpli8rKopUIhaDCbxXPttBDTISgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- 아이콘폰트 폰트아썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <!-- 스크립트 -->
+        <!-- 라이브러리 jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- 라이브러리 jquery cookie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- 스와이프 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.js" integrity="sha512-XHnWZWvy5TkCnPgLU7XsWhGAks1JQ3uFutVxRSH0Z4+djsGkCkxVsYu+JgfrDicvbCmjfUf1HeMWYUvUYKgjzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        
+        .wrap{}
+        .container{width:1080px;margin:0 auto;}
+
+        /* top-banner */
+        .top-banner{height:100px;background-color:orange;position: relative;}
+        .banner-sec{height:100px;display:flex;justify-content:center;align-items:center;}
+        .clk-btn{display: flex;}
+        .f-span,.s-span{color:white;padding:10px;}
+        .f-span{font-weight:800;font-size:26px;}
+        .s-span{margin-top:8px;}
+        .clo-btn button{position:absolute;color:white;font-size:1.8em;font-weight:300;
+            right:2%;top:10px;background-color:transparent;}
+        /* 이벤트 버튼 */
+        #trigger-01{cursor: pointer;}
+
+        
+
+        /* header */
+        .header{height:110px;}
+        .header-sec{height:100%;padding:30px 0;display:flex;}
+        .header-sec .logo{width:11%;}
+
+        /* main-nav */
+        .main-nav{position:relative;width:89%;padding:14px;}
+        .nav-child01{display:flex;flex-flow:row nowrap;justify-content:space-between;margin-left:124px;}
+        .main-nav ul li a{font-size:15px;font-weight:600;color:#333;}
+        .main-nav ul li a:hover{color:orange;}
+
+        /* sub-nav */
+        .sub-nav{position:absolute;display:flex;flex-flow:row;left:116px;right:0;top:46px;
+        justify-content:space-between;border:1px solid #ddd;padding:12px 25px;z-index:101;text-align:center;background-color:white;
+        }
+        .ssb{width:1px;height:1px;display:none;}
+        .sub-nav h2{font-size:13px;font-weight:700;color:#666;}
+        .sub-nav {margin:0 auto;}
+        .sub-nav ul li a{font-size:11px;font-weight:500;color:#999;}
+        .sub-nav ul li{padding:3px 0;}
+        
+/* ---------------------------------------------------------------------- */
+        /* mid-banner */
+        .mid-banner{height:500px;z-index:102;overflow:hidden;margin-bottom:30px;}
+        .main-slider{height:100%;}
+        .swiper-pagination{bottom:69px;}
+        /* content */
+        .contents .container{width:1080px;height:384px;display:flex;flex-flow:row nowrap;margin-bottom:30px;}
+        .contents .container>div{width:346.666666%;border:1px solid #ddd;margin-right:30px;}
+        .contents .container div:last-child{margin-right:0;position: relative;}
+        .notice-box{padding:15px 20px;}
+        .notice-name{display:flex;justify-content:space-between;border-bottom:1px solid #ddd;padding-bottom:10px;margin-bottom:12px;}
+        .notice-name h3 a{font-size:15px;font-weight:bold;}
+        .notice-name p a{font-size:0.75em;font-weight:bold;}
+        .notice-name p{padding-bottom:1px;}
+        .text-list li a{text-overflow: ellipsis;font-size:0.75em;font-weight:bold;}
+        .text-list li p{font-size:0.75em;margin:3px 0;}
+        .multimedia{height:75%;}
+        .multi-box{margin-bottom:0px;}
+        .startship-square{position:absolute;left:0;right:0;top:108%;border:1px solid #ddd;height:74px;}
+        .content-box p{font-size:0.75em;font-weight:bold;margin-top:3px;}
+        .content-box span{font-size:0.75em;font-weight:bold;color:#aaa;}
+        .square-box{}
+        /* footer */
+        .footer{width:100%;height:300px;background-color:purple;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top-banner" id="top-banner">
+            <div class="banner-sec container">
+                <div class="clk-btn">
+                    <span class="f-span">STARSHIP AUDITON</span>
+                    <span class="s-span">스타쉽 엔터테인먼트와 함께할 미래를 찾습니다.</span>
+                </div>
+                <div class="clo-btn">
+                    <button type="button" id="trigger-01"><span>X</span></button>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-sec container">
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.png" alt="indexpage 바로가기"></a>
+                </div>
+                <nav class="main-nav" id="nav-parent">
+                    <ul class="nav-child01" id="nav-child01">
+                        <li id="com-even"><a href="./company.html">COMPANY</a></li>
+                        <li><a href="./company.html">ARTISTS</a></li>
+                        <li><a href="./company.html">ACTORS</a></li>
+                        <li><a href="./company.html">PR CENTER</a></li>
+                        <li><a href="./company.html">AUDITON</a></li>
+                        <li><a href="./company.html">STARSHIP SQUARE</a></li>
+                    </ul>
+                    <div class="ssb"id="sub-nav-box">
+                        <div class="sub-nav" >
+                            <div class="sub-nav-company">
+                                <h2>COMPANY</h2>
+                                <ul>
+                                    <li><a href="#">회사소개</a></li>
+                                    <li><a href="#">대표인사말</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">사업현황</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-artists">
+                                <h2>ARTISTS</h2>
+                                <ul>
+                                    <li><a href="#">가수</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-actors">
+                                <h2>ACTORS</h2>
+                                <ul>
+                                    <li><a href="#">배우</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-pr-center">
+                                <h2>PR CENTER</h2>
+                                <ul>
+                                    <li><a href="#">NOTICE</a></li>
+                                    <li><a href="#">MULTIMEDIA</a></li>
+                                    <li><a href="#">NEW RELEASE</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-audition">
+                                <h2>AUDITION</h2>
+                                <ul>
+                                    <li><a href="#">지원안내</a></li>
+                                    <li><a href="#">지원하기</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-starship-square">
+                                <h2>STARSHIP SQUARE</h2>
+                                <ul>
+                                    <li><a href="#">STARSHIP SQUARE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="section mid-banner">
+            <div class="main-slider container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner01.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner02.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner03.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner04.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner05.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner06.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner07.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner08.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner09.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner10.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner11.jpg" alt=""></a></div>
+                        <div class="swiper-slide"><a href="#"><img src="./images/main-banner12.jpg" alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section contents">
+            <div class="container">
+                <div class="notice">
+                    <div class="notice-box content-box">
+                        <div class="notice-name">
+                            <h3><a href="#">NOTICE</a></h3>
+                            <p><a href="#">MORE</a></p>
+                        </div>
+                        <ul class="text-list">
+                            <li>
+                                <a href="#">[싱글] 마인드유 '아침' 발매 안내</a>
+                                <p>2021.10.21</p>
+                            </li>
+                            <li>
+                                <a href="#">[시리즈] 박희순 넷플리스 시리즈 '마이 네임' 공개</a>
+                                <p>2021.10.15</p>
+                            </li>
+                            <li>
+                                <a href="#">최원명 플레이리스트 '팽' 첫 방송 안내</a>
+                                <p>2021.10.07</p>
+                            </li>
+                            <li>
+                                <a href="#">은서 카카오TV '징크스' 첫 방송 안내</a>
+                                <p>2021.10.05</p>
+                            </li>
+                            <li>
+                                <a href="#">설아 '러브 인 블랙홀' 첫 방송 안내</a>
+                                <p>2021.09.17</p>
+                            </li>
+                            <li>
+                                <a href="#">신승호 넷플릭스 시리즈 'D.P'공개 안내</a>
+                                <p>2021.08.27</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="new-rel">
+                    <div class="notice-box content-box">
+                        <div class="notice-name">
+                            <h3><a href="#">NEW RELEASE</a></h3>
+                            <p><a href="#">MORE</a></p>
+                        </div>
+                        <ul class="text-list">
+                            <li>
+                                <a href="#">[SINGLE] 마인드유 (MIND U) - 아침</a>
+                                <p>2021.10.21</p>
+                            </li>
+                            <li>
+                                <a href="#">CRAVITY 1st ALBUM PART 1...</a>
+                                <p>2021.10.15</p>
+                            </li>
+                            <li>
+                                <a href="#">마인드유 (MIND U) - 안녕, 여름밤</a>
+                                <p>2021.10.07</p>
+                            </li>
+                            <li>
+                                <a href="#">우주소녀 더 블랙 - My attitude</a>
+                                <p>2021.10.05</p>
+                            </li>
+                            <li>
+                                <a href="#">우주소녀 - UNNATURAL</a>
+                                <p>2021.09.17</p>
+                            </li>
+                            <li>
+                                <a href="#">CRAVITY SEASON 3. HIDEOUT..</a>
+                                <p>2021.08.27</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="multimedia">
+                    <div class="notice-box content-box">
+                        <div class="notice-name multi-box">
+                            <h3><a href="#">MULTIMEDIA</a></h3>
+                            <p><a href="#">MORE</a></p>
+                        </div>
+                        <a href="#"><img src="./images/youtube-side.jpg" alt="마인드유 바로가기"></img></a>
+                        <a href="#"><p>[MV] 마인드유 (MIND U) - 아침</p></a>
+                        <span>2021.10.21</span>
+                    </div>
+                    <article class="startship-square">
+                    <div class="square-box">1</div>
+                    
+                    </article>
+                </div> 
+                
+            </div>    
+            
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo"></div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $(function(){
+            // 탑베너 닫기 이벤트
+            $('#trigger-01').on({
+                'click':function(){
+                    $('#top-banner').slideToggle();
+                }
+            })
+            // -------main-nav 마우스 호버 이벤트
+            $('#nav-child01').on({
+                'mouseenter':function(){
+                    $('#sub-nav-box').slideDown();
+                }
+            })
+            $('#nav-child01').on({
+                'mouseleave':function(){
+                    $('#sub-nav-box').slideUp(1);
+                }
+            })
+            // $(this).on({
+            //     'mouseleave':function(){
+            //         $('#sub-nav-box').slideup();
+            //     }
+            // })
+            // $('#com-even').on({
+            //     'mouseleave':function(){
+            //         $('#sub-nav-box').css('display','none');
+            //     }
+            // })
+    // --------------swiper default
+            var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+            var swiper = new Swiper(".mySwiper", {
+            pagination: {
+            el: ".swiper-pagination",
+            
+            },
+            });   
+        })
+    </script>
+    
+</body>
+</html>
