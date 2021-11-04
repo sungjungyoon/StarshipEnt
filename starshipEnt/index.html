@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.css" integrity="sha512-BYn1UZcpzkgi4cForzUzU/FqsewIcfXDYAU0tThFfehimrUrp5hOtcWPI1Wpli8rKopUIhaDCbxXPttBDTISgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- 아이콘폰트 폰트아썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
     
     
     <!-- 스크립트 -->
@@ -33,7 +34,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- 스와이프 js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.2.0/swiper-bundle.min.js" integrity="sha512-XHnWZWvy5TkCnPgLU7XsWhGAks1JQ3uFutVxRSH0Z4+djsGkCkxVsYu+JgfrDicvbCmjfUf1HeMWYUvUYKgjzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
         
@@ -61,44 +62,41 @@
 
         /* main-nav */
         .main-nav{position:relative;width:89%;padding:14px;}
-        .nav-child01{display:flex;flex-flow:row nowrap;justify-content:space-between;margin-left:124px;}
+        .nav-child01{display:flex;flex-flow:row nowrap;justify-content:space-between;margin-left:124px;padding-bottom:170px;}
+        .nav-child01:hover + .sub-nav{display:block;}
+        .nav-child01::after{content:'';display:block;position:absolute;width:150px;height:150px;left:0;right:0;top:68px;}
         .main-nav ul li a{font-size:15px;font-weight:600;color:#333;}
         .main-nav ul li a:hover{color:orange;}
 
         /* sub-nav */
-        .sub-nav{position:absolute;display:flex;flex-flow:row;left:116px;right:0;top:46px;
+        .sub-nav{position:absolute;display:none;flex-flow:row;left:116px;right:0;top:46px;margin:0 auto;
         justify-content:space-between;border:1px solid #ddd;padding:12px 25px;z-index:101;text-align:center;background-color:white;
         }
-        .ssb{width:1px;height:1px;display:none;}
+        .sub-nav:hover{display:block;}
         .sub-nav h2{font-size:13px;font-weight:700;color:#666;}
-        .sub-nav {margin:0 auto;}
         .sub-nav ul li a{font-size:11px;font-weight:500;color:#999;}
         .sub-nav ul li{padding:3px 0;}
+        .sub-nav-box{display:flex;justify-content:space-between;}
         
 /* ---------------------------------------------------------------------- */
-        /* mid-banner */
-        .mid-banner{height:500px;z-index:102;overflow:hidden;margin-bottom:30px;}
-        .main-slider{height:100%;}
-        .swiper-pagination{bottom:69px;}
-        /* content */
-        .contents .container{width:1080px;height:384px;display:flex;flex-flow:row nowrap;margin-bottom:30px;}
-        .contents .container>div{width:346.666666%;border:1px solid #ddd;margin-right:30px;}
-        .contents .container div:last-child{margin-right:0;position: relative;}
-        .notice-box{padding:15px 20px;}
-        .notice-name{display:flex;justify-content:space-between;border-bottom:1px solid #ddd;padding-bottom:10px;margin-bottom:12px;}
-        .notice-name h3 a{font-size:15px;font-weight:bold;}
-        .notice-name p a{font-size:0.75em;font-weight:bold;}
-        .notice-name p{padding-bottom:1px;}
-        .text-list li a{text-overflow: ellipsis;font-size:0.75em;font-weight:bold;}
-        .text-list li p{font-size:0.75em;margin:3px 0;}
-        .multimedia{height:75%;}
-        .multi-box{margin-bottom:0px;}
-        .startship-square{position:absolute;left:0;right:0;top:108%;border:1px solid #ddd;height:74px;}
-        .content-box p{font-size:0.75em;font-weight:bold;margin-top:3px;}
-        .content-box span{font-size:0.75em;font-weight:bold;color:#aaa;}
-        .square-box{}
+
+
         /* footer */
-        .footer{width:100%;height:300px;background-color:purple;}
+        .footer{height:220px;}
+        address span{display:block;font-size:0.75em;font-weight:400;color:#666;}
+        address span:last-child a{color:#666;}
+
+        .footer-box{display:flex;}
+        .footer-logo a img{padding:40px 0 0 0;}
+        .footer-addr{padding:50px;margin-left:30px;}
+        .footer-addr span:nth-child(3){color:blueviolet;}
+
+        .aud-con{padding:50px 0; margin-right: 184px;}
+        .aud-con a{display:block;margin-bottom:20px;font-size:12px;}
+        .sns{padding:48px 5px;margin-left:0;}
+        .sta-sns h4, .kik-sns h4{font-size:12px;}
+        .sns-box{display:flex;}
+        .sns-box a{padding:10px 5px;}
     </style>
 </head>
 <body>
@@ -121,15 +119,15 @@
                 </div>
                 <nav class="main-nav" id="nav-parent">
                     <ul class="nav-child01" id="nav-child01">
-                        <li id="com-even"><a href="./company.html">COMPANY</a></li>
-                        <li><a href="./company.html">ARTISTS</a></li>
-                        <li><a href="./company.html">ACTORS</a></li>
-                        <li><a href="./company.html">PR CENTER</a></li>
-                        <li><a href="./company.html">AUDITON</a></li>
-                        <li><a href="./company.html">STARSHIP SQUARE</a></li>
+                        <li><a href="./company.html">COMPANY</a></li>
+                        <li><a href="#">ARTISTS</a></li>
+                        <li><a href="#">ACTORS</a></li>
+                        <li><a href="#">PR CENTER</a></li>
+                        <li><a href="#">AUDITON</a></li>
+                        <li><a href="#">STARSHIP SQUARE</a></li>
                     </ul>
-                    <div class="ssb"id="sub-nav-box">
-                        <div class="sub-nav" >
+                    <div class="sub-nav" >
+                        <div class="sub-nav-box">
                             <div class="sub-nav-company">
                                 <h2>COMPANY</h2>
                                 <ul>
@@ -175,7 +173,6 @@
                                 </ul>
                             </div>
                         </div>
-                        
                     </div>
                 </nav>
             </div>
@@ -200,6 +197,7 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
+                    
                 </div>
             </div>
         </section>
@@ -284,8 +282,13 @@
                         <span>2021.10.21</span>
                     </div>
                     <article class="startship-square">
-                    <div class="square-box">1</div>
-                    
+                        <div class="square-box">
+                            <a href="#">
+                                <h2>STARSHIP SQUARE</h2>
+                                <p>다양한 스타쉽 굿즈를 만나보세요!</p>
+                                <p>SQUARE 바로가기</p>
+                            </a>
+                        </div>
                     </article>
                 </div> 
                 
@@ -294,10 +297,52 @@
         </section>
         <footer class="footer">
             <div class="container">
-                <div class="footer-logo"></div>
+                <div class="footer-box">
+                    <div class="footer-logo">
+                    <a href="#"><img src="./images/footer-logo.png" alt="index page 바로가기"></a>
+                    </div>
+                    <address class="footer-addr">
+                        <span>서울시 강남구 삼성로146길 4-5스타쉽ENT(06070)</span>
+                        <span>4-5, Samseong-ro 146-gil, Gangnam-gu, Seoul</span><br>
+                        <span>스타쉽ENT의 모든 컨텐츠는 저작권의 보호를 받고 있습니다.</span><br>
+                        <span>Copyright STARSHIP ENT all rights Reserved.</span><br>
+                        <span><a href="#">Mobile Ver</a></span>
+                    </address>
+                    <div class="aud-con">
+                        <a href="#">AUDITION</a>
+                        <a href="#">CONTACT</a>
+                    </div>
+                    <div class="sns">
+                        <div class="sta-sns">
+                            <h4>STARSHIP</h4>
+                            <div class="sns-box">
+                                <a href=""><img src="./images/footer-v-log.png" alt="브이로그 바로가기"></a>
+                                <a href=""><img src="./images/footer-naver-media.png" alt="미디어 바로가기"></a>
+                                <a href=""><img src="./images/footer-facebook.png" alt="페이스북 바로가기"></a>
+                                <a href=""><img src="./images/footer-twitter.png" alt="트위터 바로가기"></a>
+                                <a href=""><img src="./images/footer-youtube.png" alt="유튜브 바로가기"></a>
+                                <a href=""><img src="./images/footer-instagram.png" alt="인스타 바로가기"></a>
+                                <a href=""><img src="./images/footer-naver-bookmark.png" alt="네이버북 바로가기"></a>
+                            </div>
+                        </div>
+                        <div class="kik-sns">
+                            <h4>KINGKONG by STARSHIP</h4>
+                            <div class="sns-box">
+                                <a href="#"><img src="./images/footer-v-log.png" alt="브이로그 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-naver-media.png" alt="네이버 미디어 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-facebook.png" alt="페이스북 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-instagram.png" alt="인스타그램 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-youtube.png" alt="유튜브 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-weibo.png" alt="웨이보 바로가기"></img></a>
+                                <a href="#"><img src="./images/footer-naver-bookmark.png" alt="네이버북 바로가기"></img></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
+
     <script>
         $(function(){
             // 탑베너 닫기 이벤트
@@ -307,16 +352,16 @@
                 }
             })
             // -------main-nav 마우스 호버 이벤트
-            $('#nav-child01').on({
-                'mouseenter':function(){
-                    $('#sub-nav-box').slideDown();
-                }
-            })
-            $('#nav-child01').on({
-                'mouseleave':function(){
-                    $('#sub-nav-box').slideUp(1);
-                }
-            })
+            // $('#nav-child01').on({
+            //     'mouseover':function(){
+            //         $('#sub-nav-box').slideDown();
+            //     }
+            // })
+            // $('#nav-child01').on({
+            //     'mouseout':function(){
+            //         $('#sub-nav-box').slideUp(1);
+            //     }
+            // })
             // $(this).on({
             //     'mouseleave':function(){
             //         $('#sub-nav-box').slideup();
@@ -327,19 +372,23 @@
             //         $('#sub-nav-box').css('display','none');
             //     }
             // })
+
     // --------------swiper default
             var swiper = new Swiper(".mySwiper", {
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-            },
+                },            
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: 'true',
+                },
+                autoplay: {
+                    delay: 3000,
+                    },
             });
-            var swiper = new Swiper(".mySwiper", {
-            pagination: {
-            el: ".swiper-pagination",
             
-            },
-            });   
         })
     </script>
     
