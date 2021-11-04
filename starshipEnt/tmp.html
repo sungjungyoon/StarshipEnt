@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .par{
+            padding: 20px 0;;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: red;
+        }
+        .sub-par{
+            display:none;
+            position:absolute;
+            left: 0;
+            right:0;
+            top:100px;
+            background: green;
+        }
+        .sub-par:hover{
+            display:block;
+        }
+        .par::after{
+            content: '';
+            display: none;
+            position: absolute;
+            left: 0;
+            right:0;
+            top: 68px;
+            height: 137px;
+            /* background: blue; */
+        }
+        .par:hover::after{
+            display:block;
+        }
+        .par:hover + .sub-par{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="par">
+        <div class="chi">1</div>
+        <div class="chi">2</div>
+        <div class="chi">3</div>
+        <div class="chi">4</div>
+        <div class="chi">5</div>        
+    </div>
+    <div class="sub-par">
+        <div class="chi">일</div>
+        <div class="chi">이</div>
+        <div class="chi">삼</div>
+        <div class="chi">사</div>
+        <div class="chi">오</div>
+    </div>
+</body>
+</html>
