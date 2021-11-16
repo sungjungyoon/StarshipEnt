@@ -87,11 +87,12 @@
         .main-list{width:180px;margin-right:40px;}
         .main-list ul li{border-bottom: 1px solid #ddd;padding:8px 10px;}
         .main-list ul li a{font-size:14px;font-weight:bold;}
-        .main-contents01{width:80%;margin-bottom:120px;}
+        .main-contents01{width:80%;margin-bottom:180px;}
         .header-txt{display:flex;flex-flow:row nowrap;width:860px;border-bottom:1px solid #333;}
         .header-txt h2{padding-left:0;border:none;}
-        .header-txt p{font-size:13px;padding:14px 5px;}
-        .grey-txt{color: #8d8d8d;font-weight:800;margin-right:515px;}
+        .header-txt p{font-size:13px;align-self:center;}
+        .grey-txt{flex:7;color: #8d8d8d;font-weight:800;}
+        /* .grey-txt{color: #8d8d8d;font-weight:800;margin-right:515px;} */
 
         .starship-con{display:flex;}
         .starship-con-txt{padding:50px 0;}
@@ -101,8 +102,8 @@
         .middle-txt02 p{line-height:20px;}
         .img-box img{padding-left:90px;padding-top:30px;}
 
-        /* -------------------- */
-        .bg-area{background-color:#f5f5f5;height:663px;margin-top:60px;}
+        /* -----------회사소개 스타일--------- */
+        /* .bg-area{background-color:#f5f5f5;height:663px;margin-top:60px;}
         .ss-ci, .kk-ci{padding:60px 60px 0 60px;display:flex;}
         .ss-ci-txt{width:350px;display: flex;flex-flow:column nowrap;justify-content:center;position: relative;}
         .ss-ci-txt h4{font-size:20px;font-weight:600;margin-bottom:40px;}
@@ -112,9 +113,36 @@
         .ss-ci-img-box img{width:auto;}
         .kk-ci .ss-ci-txt{margin-right:24px;}
         .kk-ci .ss-ci-txt span{top:100px;}
-        .ss-ci-txt span{width:13%;height:2px;color:#ffa300;border: 1px solid #ffa300;position: absolute;top:90px;}
+        .ss-ci-txt span{width:13%;height:2px;color:#ffa300;border: 1px solid #ffa300;position: absolute;top:90px;} */
+        /* -------------------대표인사말 스타일--------------- */
+        /* .greeting-box{}
+        .greeting-box h5{font-size:16px;font-weight:bold;padding:30px 0;}
+        .greeting-box p{font-size:13px;line-height:25px;}
+        .top-oner{margin-bottom:40px;}
+        .top-oner p:nth-child(2){padding-bottom:20px;}
+        .top-oner p:nth-child(4){padding-bottom:20px;}
+        .bottom-oner p:nth-child(2){padding-bottom:20px;} */
+        /* ---------------아티스트 스타일----------- */
+        /* .artist-box{margin-bottom:120px;}
+        .artist-box-grid{display:grid;grid-template-columns:2.5fr 2.5fr 2.5fr 2.5fr;grid-gap:2em;padding-top:2em;}
+        .artist-box-grid li{font-size:15px;font-weight:bold;text-align:center;}
+        .artist-box-grid li a img{margin:5px 0;}
+        .artist-box-grid li:first-child{padding-bottom:25px;} */
+        /* -------------------PR CENTER 스타일 */
+        /* ---------audition 스타일 */
+        .audition-banner{margin-top:30px;}
+        .info-area{margin-top:50px;}
+        .info-area img{height:30px;width:15px;margin-right:10px;}
+        .info-area p{font-weight:bold;font-size:15px;line-height:200%;margin-bottom:15px;}
+        .info-area li{font-size:15px;margin-bottom:40px;margin-left:30px;line-height:25px;}
+        .audition-btn{text-align:center;}
+        .audition-btn a{background-color: #ffa300;padding:10px 20px;border-radius:60px;color:white;font-size:14px;}
+        .audition-btn img{width:10px;height:20px;margin-right:5px;}
+       
         
-        
+
+
+
 
 
         /* footer */
@@ -184,7 +212,7 @@
                             <div class="sub-nav-actors">
                                 <h2>ACTORS</h2>
                                 <ul>
-                                    <li><a href="./actors.html">배우</a></li>
+                                    <li><a href="./actors.hmtl">배우</a></li>
                                 </ul>
                             </div>
                             <div class="sub-nav-pr-center">
@@ -218,81 +246,67 @@
             <div class="container">
                 <div class="date-box">
                     <div class="main-list">
-                        <h2>COMPANY</h2>
+                        <h2>AUDITION</h2>
                         <ul>
-                            <li><a href="./company.html">회사소개</a></li>
-                            <li><a href="./company-greeting.html">대표인사말</a></li>
-                            <li><a href="#">연혁</a></li>
-                            <li><a href="#">사업현황</a></li>
-                            <li><a href="#">오시는길</a></li>
+                            <li><a href="./audition.html">지원안내</a></li>
+                            <li><a href="#">지원하기</a></li>
+                            <li><a href="#">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="main-contents01">
                         <div class="header-txt">
-                            <h2>회사소개</h2>
-                            <p class="grey-txt">ABOUT STARSHIP</p>
+                            <h2>지원안내</h2>
+                            <p class="grey-txt">AUDITION INFO</p>
                             <p>HOME</p>
-                            <p> > COMPANY</p>
+                            <p> > AUDITION</p>
                         </div>
-                        <div class="starship-con">
-                            <div class="starship-con-txt">
-                                <div class="middle-txt">
-                                    <h1>STARSHIP<br>
-                                        ENTERTAINMENT
-                                    </h1>
-                                    <p>스타쉽 엔터테인먼트를 소개합니다.</p>
-                                </div>
-                                <div class="middle-txt02">
-                                    <p>(주)스타쉽엔터테인먼트는 대중문화계에 새로운 방향을<Br>
-                                    제시하고 재능 있는 대중 예술인을 발굴, 육성한다는<br>
-                                    미션 아래 설립이후 재능 있고 스타성을 갖춘 아티스트를<br>
-                                    배출, 이후 다양한 시도와 마케팅으로 주목을 받고있습니다.<br>
-                                    (주)스타쉽엔터테인먼트는 가수 매니지먼트와 연기자<br>
-                                    매니지먼트를 두축으로 하여 다양한 엔터테인먼트<br>
-                                    사업을 펼치고 있습니다.
-                                    </p>
-                                </div>
+                        <div class="audition-box">
+                            <div class="audition-banner">
+                                <img src="./images/audition-banner.jpg" alt="">
                             </div>
-                            <div class="img-box">
-                                <img src="./images/company-rightimg.png" alt="ㅁ">
-                            </div>    
-                        </div>
-                        <div class="ci-area">
-                            <div class="bg-area">
-                                <div class="ss-ci">
-                                    <div class="ss-ci-txt">
-                                        <h4>STARSHIP CI</h4>
-                                        <span></span>
-                                        <p>스타쉽은 별을 품은 우주선의 의미로서 창의적인 마인드와<br>
-                                            끊임없는 열정을 바탕으로 엔터테인먼트의 선진화에<br>
-                                            앞서겠다는 의지를 담았으며 현실에 안주하지 않고 새로운<br>
-                                            영역으로 끊임없이 도전하는 모습을 표현하고 있습니다.
-                                        </p>
-                                    </div>
-                                    <div class="ss-ci-img-box">
-                                    <img src="./images/company-ci.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="kk-ci">
-                                    <div class="ss-ci-txt">
-                                        <h4>KINGKONG by STARSHIP CI</h4>
-                                        <span></span>
-                                        <p>
-                                            스타쉽과 하나가 된 킹콩 엔터테인먼트를 알리고 연기자<br>
-                                            매니지먼트 부문의 높은 브랜드 가치도를 보존하기 위한<br>
-                                            디자인 입니다.
-                                        </p>
-                                    </div>
-                                    <div class="ss-ci-img-box">
-                                    <img src="./images/company-kingkong-ci.jpg" alt="">
-                                    </div>
-                                </div>
+                            <div class="info-area">
+                                <p>
+                                    <img src="./images/logo-mini.png" alt="">모집 분야
+                                </p>
+                                <li>
+                                    보컬 / 랩 / 댄스 / 외모
+                                </li>
+                                <p>
+                                    <img src="./images/logo-mini.png" alt="">모집 절차
+                                </p>
+                                <li>
+                                    홈페이지 및 우편 접수 → 1차 합격자 개별 공지 → 카메라 테스트 및 담당자 오디션 → 최종 오디션<br>
+                                    *우편 접수 주소 : 06070 서울시 강남구 삼성로146길 4-5 스타쉽ENT 신인개발팀 앞
+                                </li>
+                                <p>
+                                    <img src="./images/logo-mini.png" alt="">지원 방법
+                                </p>
+                                <li>
+                                    - 하단의 ‘오디션 지원하기’ 버튼 클릭 후 지원서 작성<br>
+                                    - 필수 첨부 파일<br>
+                                    1) 정면 클로즈업 및 전신사진 파일 총 2장<br>
+                                    2) 지원 분야에 따른 영상 및 음성 파일<br>
+                                    - 보컬/랩 - 자유곡, 1분 이상의 영상 또는 음성 파일<br>
+                                    - 댄스 - 자유곡, 1분 이상의 영상 파일<br>
+                                    - 외모 - 자유 형식의 30초 이상의 영상 파일 (연기, 자기소개, 워킹, 포즈 등)
+                                </li>
+                                <p>
+                                    <img src="./images/logo-mini.png" alt="">유의 사항
+                                </p>
+                                <li>
+                                    - 포토샵&필터 등으로 수정 처리 혹은 정면이 아닌 사진은 1차 심사 대상에서 제외됩니다.<br>
+                                    - 포커스가 맞지 않은 동영상 파일, 음질이 불량한 음성 및 동영상 파일은 심사에 불이익이 있을 수 있습니다.
+                                </li>
+                            </div>
+                            <div class="audition-btn">
+                                <a href="./audition.html">
+                                    <img src="./images/logo-mini.png" alt=""> 오디션 지원하기
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
         <footer class="footer">
             <div class="container">

@@ -62,7 +62,8 @@
 
         /* main-nav */
         .main-nav{position:relative;width:89%;padding:14px;}
-        .nav-child01{display:flex;flex-flow:row nowrap;justify-content:space-between;margin-left:124px;padding-bottom:170px;}
+        .nav-child01{display:flex;flex-flow:row nowrap;justify-content:space-between;margin-left:124px;padding-bottom:0px;}
+        .nav-child01:hover{padding-bottom:170px;}
         .nav-child01:hover + .sub-nav{display:block;}
         .nav-child01::after{content:'';display:block;position:absolute;width:150px;height:150px;left:0;right:0;top:68px;}
         .main-nav ul li a{font-size:15px;font-weight:600;color:#333;}
@@ -90,8 +91,9 @@
         .main-contents01{width:80%;margin-bottom:120px;}
         .header-txt{display:flex;flex-flow:row nowrap;width:860px;border-bottom:1px solid #333;}
         .header-txt h2{padding-left:0;border:none;}
-        .header-txt p{font-size:13px;padding:14px 5px;}
-        .grey-txt{color: #8d8d8d;font-weight:800;margin-right:515px;}
+        .header-txt p{font-size:13px;align-self:center;}
+        .grey-txt{flex:7;color: #8d8d8d;font-weight:800;}
+        /* .grey-txt{color: #8d8d8d;font-weight:800;margin-right:515px;} */
 
         .starship-con{display:flex;}
         .starship-con-txt{padding:50px 0;}
@@ -101,8 +103,8 @@
         .middle-txt02 p{line-height:20px;}
         .img-box img{padding-left:90px;padding-top:30px;}
 
-        /* -------------------- */
-        .bg-area{background-color:#f5f5f5;height:663px;margin-top:60px;}
+        /* -----------회사소개 스타일--------- */
+        /* .bg-area{background-color:#f5f5f5;height:663px;margin-top:60px;}
         .ss-ci, .kk-ci{padding:60px 60px 0 60px;display:flex;}
         .ss-ci-txt{width:350px;display: flex;flex-flow:column nowrap;justify-content:center;position: relative;}
         .ss-ci-txt h4{font-size:20px;font-weight:600;margin-bottom:40px;}
@@ -112,9 +114,25 @@
         .ss-ci-img-box img{width:auto;}
         .kk-ci .ss-ci-txt{margin-right:24px;}
         .kk-ci .ss-ci-txt span{top:100px;}
-        .ss-ci-txt span{width:13%;height:2px;color:#ffa300;border: 1px solid #ffa300;position: absolute;top:90px;}
+        .ss-ci-txt span{width:13%;height:2px;color:#ffa300;border: 1px solid #ffa300;position: absolute;top:90px;} */
+        /* -------------------대표인사말 스타일--------------- */
+        /* .greeting-box{}
+        .greeting-box h5{font-size:16px;font-weight:bold;padding:30px 0;}
+        .greeting-box p{font-size:13px;line-height:25px;}
+        .top-oner{margin-bottom:40px;}
+        .top-oner p:nth-child(2){padding-bottom:20px;}
+        .top-oner p:nth-child(4){padding-bottom:20px;}
+        .bottom-oner p:nth-child(2){padding-bottom:20px;} */
+        /* ---------------아티스트 스타일----------- */
+        .artist-box{margin-bottom:120px;}
+        .artist-box-grid{display:grid;grid-template-columns:2.5fr 2.5fr 2.5fr 2.5fr;grid-gap:2em;padding-top:2em;}
+        .artist-box-grid li{font-size:15px;font-weight:bold;text-align:center;}
+        .artist-box-grid li a img{margin:5px 0;}
+        .artist-box-grid li:first-child{padding-bottom:25px;}
         
-        
+
+
+
 
 
         /* footer */
@@ -184,7 +202,7 @@
                             <div class="sub-nav-actors">
                                 <h2>ACTORS</h2>
                                 <ul>
-                                    <li><a href="./actors.html">배우</a></li>
+                                    <li><a href="./actors.hmtl">배우</a></li>
                                 </ul>
                             </div>
                             <div class="sub-nav-pr-center">
@@ -218,87 +236,93 @@
             <div class="container">
                 <div class="date-box">
                     <div class="main-list">
-                        <h2>COMPANY</h2>
+                        <h2>ARTIST</h2>
                         <ul>
-                            <li><a href="./company.html">회사소개</a></li>
-                            <li><a href="./company-greeting.html">대표인사말</a></li>
-                            <li><a href="#">연혁</a></li>
-                            <li><a href="#">사업현황</a></li>
-                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">강은아</a></li>
+                            <li><a href="#">김범</a></li>
+                            <li><a href="#">박선</a></li>
+                            <li><a href="#">박희순</a></li>
+                            <li><a href="#">송승헌</a></li>
+                            <li><a href="#">송하윤</a></li>
+                            <li><a href="#">신승호</a></li>
+                            <li><a href="#">신지연</a></li>
+                            <li><a href="#">신현수</a></li>
+                            <li><a href="#">안소요</a></li>
+                            <li><a href="#">오소현</a></li>
+                            <li><a href="#">오아연</a></li>
+                            <li><a href="#">오혜원</a></li>
+                            <li><a href="#">유연석</a></li>
+                            <li><a href="#">이광수</a></li>
+                            <li><a href="#">이다연</a></li>
+                            <li><a href="#">이동욱</a></li>
+                            <li><a href="#">이승헌</a></li>
+                            <li><a href="#">이루비</a></li>
+                            <li><a href="#">이미연</a></li>
+                            <li><a href="#">이종화</a></li>
+                            <li><a href="#">이진</a></li>
+                            <li><a href="#">임수정</a></li>
+                            <li><a href="#">전소민</a></li>
+                            <li><a href="#">정원창</a></li>
+                            <li><a href="#">조윤희</a></li>
+                            <li><a href="#">채수빈</a></li>
+                            <li><a href="#">천영민</a></li>
+                            <li><a href="#">최원명</a></li>
+                            <li><a href="#">최희진</a></li>
+                            <li><a href="#">한민</a></li>
                         </ul>
                     </div>
                     <div class="main-contents01">
                         <div class="header-txt">
-                            <h2>회사소개</h2>
-                            <p class="grey-txt">ABOUT STARSHIP</p>
+                            <h2>배우</h2>
+                            <p class="grey-txt">ACTORS</p>
                             <p>HOME</p>
-                            <p> > COMPANY</p>
+                            <p> > ACTORS</p>
                         </div>
-                        <div class="starship-con">
-                            <div class="starship-con-txt">
-                                <div class="middle-txt">
-                                    <h1>STARSHIP<br>
-                                        ENTERTAINMENT
-                                    </h1>
-                                    <p>스타쉽 엔터테인먼트를 소개합니다.</p>
-                                </div>
-                                <div class="middle-txt02">
-                                    <p>(주)스타쉽엔터테인먼트는 대중문화계에 새로운 방향을<Br>
-                                    제시하고 재능 있는 대중 예술인을 발굴, 육성한다는<br>
-                                    미션 아래 설립이후 재능 있고 스타성을 갖춘 아티스트를<br>
-                                    배출, 이후 다양한 시도와 마케팅으로 주목을 받고있습니다.<br>
-                                    (주)스타쉽엔터테인먼트는 가수 매니지먼트와 연기자<br>
-                                    매니지먼트를 두축으로 하여 다양한 엔터테인먼트<br>
-                                    사업을 펼치고 있습니다.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="img-box">
-                                <img src="./images/company-rightimg.png" alt="ㅁ">
-                            </div>    
-                        </div>
-                        <div class="ci-area">
-                            <div class="bg-area">
-                                <div class="ss-ci">
-                                    <div class="ss-ci-txt">
-                                        <h4>STARSHIP CI</h4>
-                                        <span></span>
-                                        <p>스타쉽은 별을 품은 우주선의 의미로서 창의적인 마인드와<br>
-                                            끊임없는 열정을 바탕으로 엔터테인먼트의 선진화에<br>
-                                            앞서겠다는 의지를 담았으며 현실에 안주하지 않고 새로운<br>
-                                            영역으로 끊임없이 도전하는 모습을 표현하고 있습니다.
-                                        </p>
-                                    </div>
-                                    <div class="ss-ci-img-box">
-                                    <img src="./images/company-ci.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="kk-ci">
-                                    <div class="ss-ci-txt">
-                                        <h4>KINGKONG by STARSHIP CI</h4>
-                                        <span></span>
-                                        <p>
-                                            스타쉽과 하나가 된 킹콩 엔터테인먼트를 알리고 연기자<br>
-                                            매니지먼트 부문의 높은 브랜드 가치도를 보존하기 위한<br>
-                                            디자인 입니다.
-                                        </p>
-                                    </div>
-                                    <div class="ss-ci-img-box">
-                                    <img src="./images/company-kingkong-ci.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="artist-box">
+                            <ul class="artist-box-grid">
+                                <li><a href="#"><img src="./images/p_kangeuna.jpg" alt="">강은아</a></li>
+                                <li><a href="#"><img src="./images/p_kimbeom.jpg" alt="">김범</a></li>
+                                <li><a href="#"><img src="./images/p_parksun.jpg" alt="">박선</a></li>
+                                <li><a href="#"><img src="./images/p_parkheesoon.jpg" alt="">박희순</a></li>
+                                <li><a href="#"><img src="./images/p_songseungheon.jpg" alt="">송승헌</a></li>
+                                <li><a href="#"><img src="./images/p_songhayoon.jpg" alt="">송하윤</a></li>
+                                <li><a href="#"><img src="./images/p_shinseungho.jpg" alt="">신승호</a></li>
+                                <li><a href="#"><img src="./images/p_shinjiyeon.jpg" alt="">신지연</a></li>
+                                <li><a href="#"><img src="./images/p_shinhyunsoo.jpg" alt="">신현수</a></li>
+                                <li><a href="#"><img src="./images/p_ahnsoyo.jpg" alt="">안소요</a></li>
+                                <li><a href="#"><img src="./images/p_ohsohyun.jpg" alt="">오소현</a></li>
+                                <li><a href="#"><img src="./images/p_ohahyeon.jpg" alt="">오아연</a></li>
+                                <li><a href="#"><img src="./images/p_ohhyewon.jpg" alt="">오혜원</a></li>
+                                <li><a href="#"><img src="./images/p_yooyeonseok.jpg" alt="">유연석</a></li>
+                                <li><a href="#"><img src="./images/p_leekwangsoo.jpg" alt="">이광수</a></li>
+                                <li><a href="#"><img src="./images/p_leesumin.jpg" alt="">이다연</a></li>
+                                <li><a href="#"><img src="./images/p_leedongwook.jpg" alt="">이동욱</a></li>
+                                <li><a href="#"><img src="./images/p_leeseunghun.jpg" alt="">이승헌</a></li>
+                                <li><a href="#"><img src="./images/p_leeruby.jpg" alt="">이루비</a></li>
+                                <li><a href="#"><img src="./images/p_leemeyeon.jpg" alt="">이미연</a></li>
+                                <li><a href="#"><img src="./images/p_leejonghwa.jpg" alt="">이종화</a></li>
+                                <li><a href="#"><img src="./images/p_leejin.jpg" alt="">이진</a></li>
+                                <li><a href="#"><img src="./images/p_limsoojung.jpg" alt="">임수정</a></li>
+                                <li><a href="#"><img src="./images/p_jeonsomin.jpg" alt="">전소민</a></li>
+                                <li><a href="#"><img src="./images/p_jungwonchang.jpg" alt="">정원창</a></li>
+                                <li><a href="#"><img src="./images/p_choyoonhee.jpg" alt="">조윤희</a></li>
+                                <li><a href="#"><img src="./images/p_soobin.jpg" alt="">채수빈</a></li>
+                                <li><a href="#"><img src="./images/p_youngmin.jpg" alt="">천영민</a></li>
+                                <li><a href="#"><img src="./images/p_choiwonmyeong.jpg" alt="">최원명</a></li>
+                                <li><a href="#"><img src="./images/p_choiheejin.jpg" alt="">최희진</a></li>
+                                <li><a href="#"><img src="./images/p_hanmin.jpg" alt="">한민</a></li>
+                               
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
         <footer class="footer">
             <div class="container">
                 <div class="footer-box">
                     <div class="footer-logo">
-                    <a href="#"><img src="./images/footer-logo.png" alt="index page 바로가기"></a>
+                    <a href="./index.html"><img src="./images/footer-logo.png" alt="index page 바로가기"></a>
                     </div>
                     <address class="footer-addr">
                         <span>서울시 강남구 삼성로146길 4-5스타쉽ENT(06070)</span>

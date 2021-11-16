@@ -40,6 +40,29 @@
         .par:hover + .sub-par{
             display:block;
         }
+
+        .box{
+            margin:0;
+            width:150px;
+            border:1px solid black;
+            padding:1em;
+            position:relative;
+        }
+        .box ul{
+            margin:0;
+            position:absolute;
+            top:100%;
+            left:0;
+            right:0;
+            border:1px solid black;
+            display:none;
+            overflow:hidden;
+            /* transition: 0.3s; */
+        }
+       /* select{display:none;} */
+        .box li:hover{
+            background-color:red;
+        }
     </style>
 </head>
 <body>
@@ -57,5 +80,52 @@
         <div class="chi">사</div>
         <div class="chi">오</div>
     </div>
+    <select name="search-key" id="search-key">
+        <option value="1">제목</option>
+        <option value="2">제목+내영</option>
+        <option value="3">작성자</option>
+        <option value="4">작성일자</option>
+    </select>
+
+    <div class="box">
+        <div class="box-tit">제목</div>
+        <ul>
+            <li>제목</li>
+            <li>제목+내영</li>
+            <li>작성자</li>
+            <li>작성일자</li>
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.box').on({
+            'click':function(){
+               $('.box ul').slideToggle();
+            }
+        })
+
+        $('.box li').on({
+            'click':function(){
+               $('.box-tit').text($(this).text());
+            //    -----서버 전송----
+               $('option').removeAttr('selected');
+               if($(this).text()=='제목'){                    
+                   console.log('제목');
+                    $('option').eq(0).attr('selected',true);
+               }else  if($(this).text()=='제목+내영'){                    
+                console.log('제목+내영');
+                    $('option').eq(1).attr('selected',true);
+               }else  if($(this).text()=='작성자'){                    
+                console.log('작성자');
+                    $('option').eq(2).attr('selected',true);
+               }else  if($(this).text()=='작성일자'){                    
+                console.log('작성일자');
+                    $('option').eq(3).attr('selected',true);
+               }
+            }
+        })
+
+        
+    </script>
 </body>
 </html>
